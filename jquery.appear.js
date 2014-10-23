@@ -34,7 +34,7 @@
         var $disappeared = $prior_appeared.not($appeared);
         $disappeared.trigger('disappear', [$disappeared]);
       }
-      $prior_appeared = $appeared;
+      $prior_appeared.push($appeared);
     }
   }
 
